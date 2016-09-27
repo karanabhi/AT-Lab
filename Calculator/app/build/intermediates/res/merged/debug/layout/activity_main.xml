@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_editText_num"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:hint="Enter Number"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/main_button_plus"
+        android:layout_below="@+id/main_editText_num"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/main_button_minus"
+        android:layout_alignTop="@+id/main_button_plus"
+        android:layout_toEndOf="@+id/main_button_plus"
+        android:layout_marginStart="38dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:id="@+id/main_button_mul"
+        android:layout_alignTop="@+id/main_button_minus"
+        android:layout_toStartOf="@+id/main_button_div"
+        android:layout_marginEnd="47dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:id="@+id/main_button_div"
+        android:layout_alignTop="@+id/main_button_mul"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Square Root"
+        android:id="@+id/main_button_sq"
+        android:layout_below="@+id/main_button_plus"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X^2"
+        android:id="@+id/main_button_pow"
+        android:layout_alignTop="@+id/main_button_sq"
+        android:layout_alignStart="@+id/main_button_mul" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:id="@+id/main_button_eq"
+        android:layout_alignTop="@+id/main_button_pow"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/main_button_clr"
+        android:layout_below="@+id/main_button_sq"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+</RelativeLayout>
+<!-- From: file:/D:/130911122Abhi/Calculator/app/src/main/res/layout/activity_main.xml -->
